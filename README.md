@@ -34,6 +34,12 @@ Alternatively, to install the latest development version, run:
 
     pip install git+https://github.com/DeepLabCut/napari-deeplabcut.git
 
+### Docker
+
+Build Docker image (tested on Ubuntu 22.04 LTS)
+``` docker build -t napari-deeplabcut:latest . ```
+
+``` docker run -e DISPLAY=$DISPLAY -v /tmp/.X11:/tmp/.X11 -v /path/to/your/data:/data napari-deeplabcut:latest ```
 
 ## Usage
 
